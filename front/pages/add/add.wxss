@@ -1,0 +1,44 @@
+/* pages/add/add.wxss */
+.indata{
+  margin: 10rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+.upload{
+  margin-top: 30rpx;
+  margin-bottom: 200rpx;
+}
+.tex{
+   font-size: 14px;
+   margin-left: 10rpx;
+   margin-bottom: 10rpx;
+   font-family: Arial Black;
+   color: gray;
+}
+.wrapper{
+  margin-left: 10rpx;
+  margin-right: 30rpx;
+  margin-bottom: 20rpx;
+  border:  1px solid lavender;
+  box-shadow: 0px 5px 3px lavender
+}
+.outerWrapper{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.img{
+  height: 20px;
+  width:20px;
+  margin-left: 20rpx;
+  margin-top: 13rpx;
+}
+.innerWrapper{
+  display:flex;
+  flex-direction: row;
+}
+.outer{
+  margin-top: 30rpx;
+}
+.pdata{
+  font-size: 15px;
+}

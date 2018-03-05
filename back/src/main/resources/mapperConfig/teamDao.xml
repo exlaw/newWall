@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.teamDao">
+    <resultMap id="teamResultMap" type="com.example.demo.entity.team">
+        <id property="id" column="id"></id>
+        <result property="teamName" column="teamName"></result>
+        <result property="leaderNumber" column="leaderNumber"></result>
+        <collection property="members" ofType="com.example.demo.entity.member">
+            <id property="id" column="mid"></id>
+            <result property="name" column="name"></result>
+            <result property="number" column="schoolNumber"></result>
+            <result property="teamID" column="teamID"></result>
+        </collection>
+    </resultMap>
+    <select id="getTeam" resultMap="teamResultMap">
+         SELECT * FROM team,member WHERE teamID=team.id
+    </select>
+    <insert id="addTeam" parameterType="com.example.demo.entity.team"
+            useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO team VALUES (#{id},#{teamName},#{leaderNumber})
+    </insert>
+</mapper>

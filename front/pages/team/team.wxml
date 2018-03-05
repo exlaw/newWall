@@ -1,0 +1,19 @@
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">队名</view>
+    <view class="th">队长</view>
+    <view class="th ">队员</view>
+  </view>
+  <block wx:for="{{listData}}" wx:key="{{code}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.name}}</view>
+      <view class="td">{{item.leader}}</view>
+      <view class="td">{{item.content}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">{{item.name}}</view>
+      <view class="td">{{item.leader}}</view>
+      <view class="td">{{item.content}}</view>
+    </view>
+  </block>
+</view>

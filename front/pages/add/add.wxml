@@ -1,0 +1,62 @@
+<!--pages/add/add.wxml-->
+<scroll-view class="outer">
+  <view class="up" class="innerWrapper">
+     <image src='../../images/team.png' class="img"></image>
+    <input bindinput='bteamname' class="indata" placeholder='队名' placeholder-class='pdata'></input>
+  </view>
+  <view class="outerWrapper">
+  <text class="tex">队长:</text>
+  <view class="wrapper">
+    <view class="innerWrapper">
+    <image src='../../images/people.png' class="img"></image>
+    <input bindinput='bleadername' class="indata" placeholder='姓名' placeholder-class='pdata'></input>
+    </view>
+    <view class="innerWrapper">
+     <image src='../../images/alist1.png' class="img"></image>
+    <input bindinput='bleadernumber' class="indata" placeholder='学号' placeholder-class='pdata'></input>
+    </view>
+  </view>
+  </view>
+  <view class="outerWrapper">
+   <text class="tex">队员一:</text>
+  <view class="wrapper">
+   <view class="innerWrapper">
+    <image src='../../images/people.png' class="img"></image>
+    <input bindinput='bmember1name' class="indata" placeholder='姓名' placeholder-class='pdata'></input>
+    </view>
+    <view class="innerWrapper">
+     <image src='../../images/alist1.png' class="img"></image>
+    <input bindinput='bmember1number' class="indata" placeholder='学号' placeholder-class='pdata'></input>
+    </view> 
+  </view>
+  </view>
+  <view class="outerWrapper">
+  <text class="tex">队员二:</text>
+   <view class="wrapper">
+    <view class="innerWrapper">
+    <image src='../../images/people.png' class="img"></image>
+    <input bindinput='bmember2name' class="indata" placeholder='姓名' placeholder-class='pdata'></input>
+    </view>
+    <view class="innerWrapper">
+     <image src='../../images/alist1.png' class="img"></image>
+    <input bindinput='bmember2number' class="indata" placeholder='学号' placeholder-class='pdata'></input>
+    </view>
+   </view>
+     </view>
+      <view class="outerWrapper">
+   <text class="tex">队员三:</text>
+    <view class="wrapper">
+    <view class="innerWrapper">
+    <image src='../../images/people.png' class="img"></image>
+    <input bindinput='bmember3name' class="indata" placeholder='姓名' placeholder-class='pdata'></input>
+    </view>
+    <view class="innerWrapper">
+     <image src='../../images/alist1.png' class="img"></image>
+    <input bindinput='bmember3number' class="indata" placeholder='学号' placeholder-class='pdata'></input>
+    </view>
+  </view>
+  </view>
+  <view>
+  <button bindtap='register' class="upload">提交</button>
+  </view>
+</scroll-view>

@@ -1,0 +1,32 @@
+{   
+  "pages":[
+      "pages/add/add",
+    "pages/team/team",
+    "pages/index/index",
+ 
+    "pages/logs/logs",
+    
+    "pages/login/login" 
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1C86EE",
+    "navigationBarTitleText": "学术墙",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#1C86EE",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/team/team",
+        "text": "查看队伍"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "报名比赛"
+      }
+    ]
+  }
+}

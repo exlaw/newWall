@@ -1,0 +1,45 @@
+<view class="all">
+<view class="upper">
+  <view class="choose">
+    <icon class="searchcion" size='17' type='search' color='#1C86EE' ></icon>  
+    <input class="search" placeholder-class="phcolor" placeholder=' 搜索您想要的内容' ></input>  
+  </view>
+  <view class="right1">
+     <image src='../../images/pen.png' style="width: 20px; height: 20px" class='ic'>
+             </image>
+    <text class="button1" bindtap="addAnswer">提问</text>
+  </view>
+</view>
+<view class="wrap"  wx:for="{{array}}" wx:key="unique">
+  <view class="up">
+    <view class="uup">
+      <view class="upleft">
+          <text class="tex4">JavaScript</text>
+      </view>
+      <view class="upleft">
+          <text class="tex4">web前端</text>
+      </view>
+      <view class="upleft">
+          <text class="tex4">闭包</text>
+      </view>
+    </view>
+    <view class="middle">
+      <image src='../../images/user2.png' style="width: 20px; height: 20px" class='ic'>
+             </image>
+      <text class="tex2">匿名用户</text>
+    </view>
+    <view class="middle2">
+        <text class="tex3">关于javascript和浏览器兼容问题</text>
+    </view>
+    <view class="middle3">
+        <text class="tex5">{{script}}</text>
+    </view>
+    <view class="bottom">
+    <view class="bleft">
+       <text class="tex">10 回答 关注问题</text>
+    </view>
+       <text class="tex10">2018-2-5</text>
+    </view>
+  </view>
+</view>
+</view>
